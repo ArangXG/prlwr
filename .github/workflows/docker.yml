@@ -53,8 +53,8 @@ jobs:
             WILDRIG_VERSION=${{ steps.wildrig.outputs.version }}
             CACHEBUST=${{ github.run_id }}
           tags: |
-            GANTI_USERNAME_DOCKERHUB/prlwr:latest
-            GANTI_USERNAME_DOCKERHUB/prlwr:${{ steps.wildrig.outputs.version }}
+            tarxg/prlwr:latest
+            tarxg/prlwr:${{ steps.wildrig.outputs.version }}
 
       - name: Simpan & commit versi terbaru
         if: steps.wildrig.outputs.skip != 'true'
